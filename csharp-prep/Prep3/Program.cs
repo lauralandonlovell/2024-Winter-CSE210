@@ -6,19 +6,15 @@ class Program
 {
     static void Main(string[] args)
     {   
-        //continuing to play
-        // string response = "yes";
-        // while (response == "yes")
-        // {
-
-        //importing random number
-        Random random = new Random();
-        int newRandom = random.Next(1,101);
-        Console.WriteLine(newRandom);
-
+        //loop that keeps the game open if user wants to play again
         string response = "yes";
         while (response == "yes")
-        {
+        {   
+            //importing random number
+            Random random = new Random();
+            int newRandom = random.Next(1,101);
+            Console.WriteLine(newRandom);
+
             int guess = -1;
             while (guess != newRandom)
             {
@@ -38,9 +34,10 @@ class Program
                     Console.WriteLine("Congratulations! You guessed the magic number!");
                 }       
             }
+            //continue the game if the user wants
             Console.WriteLine("Would you like to keep playing? yes or no? ");
             response = Console.ReadLine();
-            Console.WriteLine(response);   
+            //Console.WriteLine(response);   
         }       
     }            
 }
