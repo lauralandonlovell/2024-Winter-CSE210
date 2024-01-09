@@ -37,7 +37,7 @@ class Program
         }
         Console.WriteLine("Would you like to play again? yes or no?");
         response = Console.ReadLine();
-        // while (response == "yes")
+        //while (response == "yes")
         // {
         //     Console.WriteLine("say hi");
 
