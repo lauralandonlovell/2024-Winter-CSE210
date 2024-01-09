@@ -6,6 +6,7 @@ class Program
 {
     static void Main(string[] args)
     {
+        //importing random number
         Random random = new Random();
         int newRandom = random.Next(1,101);
         Console.WriteLine(newRandom);
@@ -18,18 +19,18 @@ class Program
 
             if (newRandom > guess)
             {
-                Console.Write("Guess higher next time.");
+                Console.WriteLine("Guess higher next time.");
             }
             else if (newRandom < guess)
             {
-                Console.Write("Guess lower next time.");
+                Console.WriteLine("Guess lower next time.");
             }
             else
             {
                 Console.WriteLine("Congratulations! You guessed the magic number!"); 
             }    
         }
-        Console.Write("Would you like to play again? ");
+        Console.WriteLine("Would you like to play again? yes or no?");
         
     }        
     
