@@ -6,16 +6,18 @@ class Program
 {
     static void Main(string[] args)
     {
-        //importing random number
-        Random random = new Random();
-        int newRandom = random.Next(1,101);
-        Console.WriteLine(newRandom);
-
+        
+        //continuing to play
         string response = "";
         while (response == "yes")
         {
             Console.WriteLine("say hi");
         }
+        //importing random number
+        Random random = new Random();
+        int newRandom = random.Next(1,101);
+        Console.WriteLine(newRandom);
+
         int guess = -1;
         while (guess != newRandom)
         {
