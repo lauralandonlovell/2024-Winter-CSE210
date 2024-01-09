@@ -11,6 +11,11 @@ class Program
         int newRandom = random.Next(1,101);
         Console.WriteLine(newRandom);
 
+        string response = "";
+        while (response == "yes")
+        {
+            Console.WriteLine("say hi");
+        }
         int guess = -1;
         while (guess != newRandom)
         {
@@ -31,6 +36,12 @@ class Program
             }    
         }
         Console.WriteLine("Would you like to play again? yes or no?");
+        response = Console.ReadLine();
+        // while (response == "yes")
+        // {
+        //     Console.WriteLine("say hi");
+
+        // }
         
     }        
     
