@@ -8,7 +8,6 @@ class Program
     {
         
         //continuing to play
-        string response = "";
         while (response == "yes")
         {
             Console.WriteLine("say hi");
