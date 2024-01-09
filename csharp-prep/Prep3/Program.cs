@@ -7,14 +7,18 @@ class Program
     static void Main(string[] args)
     {   
         //continuing to play
+        // string response = "yes";
+        // while (response == "yes")
+        // {
+
+        //importing random number
+        Random random = new Random();
+        int newRandom = random.Next(1,101);
+        Console.WriteLine(newRandom);
+
         string response = "yes";
         while (response == "yes")
         {
-            //importing random number
-            Random random = new Random();
-            int newRandom = random.Next(1,101);
-            Console.WriteLine(newRandom);
-
             int guess = -1;
             while (guess != newRandom)
             {
@@ -33,9 +37,10 @@ class Program
                 {
                     Console.WriteLine("Congratulations! You guessed the magic number!");
                 }       
-            }   
-        }
-        Console.WriteLine("Would you like to play again? yes or no?");
-        response = Console.ReadLine();       
+            }
+            Console.WriteLine("Would you like to keep playing? yes or no? ");
+            response = Console.ReadLine();
+            Console.WriteLine(response);   
+        }       
     }            
 }
