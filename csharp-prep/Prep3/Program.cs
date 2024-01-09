@@ -7,9 +7,8 @@ class Program
     static void Main(string[] args)
     {   
         //continuing to play
-        // string response = "";
-        // int counter = 0;
-        // while (response == "yes")
+        string response = "yes";
+        while (response == "yes")
         {
             //importing random number
             Random random = new Random();
@@ -33,16 +32,10 @@ class Program
                 else
                 {
                     Console.WriteLine("Congratulations! You guessed the magic number!");
-                    Console.WriteLine("Would you like to play again? yes or no?");
-                    string response = Console.ReadLine();
-                    //counter++;
                 }       
-            }
-            
-            //string response = Console.ReadLine();      //while (response == "yes")
-            // {
-        }   //     Console.WriteLine("say hi");
-
-
-    }    // }        
+            }   
+        }
+        Console.WriteLine("Would you like to play again? yes or no?");
+        response = Console.ReadLine();       
+    }            
 }
