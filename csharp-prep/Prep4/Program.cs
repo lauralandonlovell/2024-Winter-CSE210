@@ -11,7 +11,7 @@ class Program
             Console.WriteLine("Enter a number: ");
             string response = Console.ReadLine();
             int number = int.Parse(response);
-            Console.WriteLine(number);
+            //Console.WriteLine(number);
             i++;
         }
     }
