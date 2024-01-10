@@ -1,21 +1,23 @@
 using System;
 using System.Collections.Generic;
 
+//instantiated list
+List<int>numbers = new List<int>();
 
 
-//asking user for numbers
 for (int i = 0; i <= 9; i++)
 {
-    List<int> numbers = new List<int>();
-
     //numbers from user
     Console.WriteLine("Enter a number: ");
-    string number = Console.ReadLine();
-    int numero = int.Parse(number);
-    Console.WriteLine(numero);
-    
+    int numero = int.Parse(Console.ReadLine());
+
     //filling list
     numbers.Add(numero);
-    //Console.WriteLine(numbers);
 }
+
+foreach (int number in numbers)
+{
+    Console.WriteLine(number);
+}
+
 
