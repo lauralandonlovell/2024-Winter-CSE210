@@ -14,7 +14,7 @@ class Program
        job1.Display();
 
        Job job2 = new Job();
-       job2._jobTitle = "Horse Trainer";
+       job2._jobTitle = "      Horse Trainer";
        job2._company = "Happy Horse Farms";
        job2._startYear = "2000";
        job2._endYear = "2024";
@@ -23,7 +23,7 @@ class Program
 
        Resume resume1 = new Resume();
        resume1._name = "Allie Lovell";
-       
+
        resume1._jobs.Add(job1);
        resume1._jobs.Add(job2);
        
