@@ -11,7 +11,7 @@ class Program
        job1._startYear = "1997";
        job1._endYear = "2024";
 
-       job1.Display();
+       //job1.Display();
 
        Job job2 = new Job();
        job2._jobTitle = "      Horse Trainer";
@@ -19,7 +19,7 @@ class Program
        job2._startYear = "2000";
        job2._endYear = "2024";
 
-       job2.Display();
+       //job2.Display();
 
        Resume resume1 = new Resume();
        resume1._name = "Allie Lovell";
