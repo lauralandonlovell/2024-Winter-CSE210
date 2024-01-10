@@ -21,7 +21,15 @@ class Program
 
        job2.Display();
 
+       Resume resume1 = new Resume();
+       resume1._name = "Allie Lovell";
        
+       resume1._jobs.Add(job1);
+       resume1._jobs.Add(job2);
+       
+       resume1.Display();
+
+
 
 
 
