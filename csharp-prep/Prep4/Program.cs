@@ -21,6 +21,10 @@ class Program
         {
             Console.WriteLine(number);
         }
+
+        //computing sum
+        int total = numbers.Sum();
+        Console.WriteLine(total);
     }
 }
 
