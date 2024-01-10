@@ -25,7 +25,10 @@ class Program
         //computing sum
         int total = numbers.Sum();
         Console.WriteLine(total);
-        Console.WriteLine($"The total is {total}.");
+
+        float average = total / numbers.Count;
+
+        Console.WriteLine($"The total is {total}.The average is {average}");
     }
 }
 
