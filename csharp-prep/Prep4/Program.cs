@@ -25,12 +25,16 @@ class Program
         //computing sum
         int total = numbers.Sum();
         Console.WriteLine(total);
+
         decimal count = numbers.Count;
         Console.WriteLine(count);
 
         decimal average = total / count;
 
-        Console.WriteLine($"The total is {total}.The average is {average}");
+        float maximum = numbers.Max();
+
+        Console.WriteLine($"The total is {total}.The average is {average}. The highest value is {maximum}.");
+        
     }
 }
 
