@@ -11,6 +11,19 @@ class Program
        job1._startYear = "1997";
        job1._endYear = "2024";
 
-       job1.Display();           
+       job1.Display();
+
+       Job job2 = new Job();
+       job2._jobTitle = "Horse Trainer";
+       job2._company = "Happy Horse Farms";
+       job2._startYear = "2000";
+       job2._endYear = "2024";
+
+       job2.Display();
+
+       
+
+
+
     }    
 }
