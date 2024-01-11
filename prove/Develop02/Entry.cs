@@ -1,4 +1,8 @@
 public class Entry
 {
-    public _date = DateTime.Now.Date;   
+    public string _writeEntry = "";
+    public string _prompt = "";
+    //public DateOnly (int year, int month, int day, System.Globalization.Calendar calendar);
+
 }
+

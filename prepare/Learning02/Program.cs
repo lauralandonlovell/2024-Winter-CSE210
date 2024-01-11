@@ -12,9 +12,7 @@ class Program
        job1._endYear = "2024";
 
        //job1.Display();
-
-
-
+       
        Job job2 = new Job();
        job2._jobTitle = "Horse Trainer";
        job2._company = "Happy Horse Farms";
@@ -30,10 +28,5 @@ class Program
        resume1._jobs.Add(job2);
        
        resume1.Display();
-
-
-
-
-
     }    
 }
