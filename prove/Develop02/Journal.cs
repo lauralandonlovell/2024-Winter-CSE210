@@ -4,7 +4,7 @@ public class Journal
     
     public void DisplayMessage()
     {
-        Console.ForegroundColor = ConsoleColor.Red;
+        Console.ForegroundColor = ConsoleColor.Yellow;
         Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
         Console.WriteLine("Welcome to the Journal Program!");
         Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
@@ -24,7 +24,7 @@ public class Journal
     } 
     public void DisplayEndMessage()
     {
-        Console.ForegroundColor = ConsoleColor.Red;
+        Console.ForegroundColor = ConsoleColor.Yellow;
         Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
         Console.WriteLine("Good-bye, write again tomorrow!");
         Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
