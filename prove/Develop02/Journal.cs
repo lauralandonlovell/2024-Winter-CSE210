@@ -5,9 +5,10 @@ public class Journal
     public void DisplayMessage()
     {
         Console.ForegroundColor = ConsoleColor.Yellow;
-        Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+    
+        Console.WriteLine("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
         Console.WriteLine("Welcome to the Journal Program!");
-        Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+        Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
 
     }
     public void DisplayMenu()
@@ -30,6 +31,7 @@ public class Journal
         Console.WriteLine("Good-bye, write again tomorrow!");
         Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
         Console.Write("Press any key to exit: ");
+        Console.WriteLine();
         Console.ReadKey();
 
 
