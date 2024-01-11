@@ -28,6 +28,9 @@ public class Journal
         Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
         Console.WriteLine("Good-bye, write again tomorrow!");
         Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+        Console.Write("Press any key to exit: ");
+        Console.ReadKey();
+
 
     }  
 }

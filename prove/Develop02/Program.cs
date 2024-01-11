@@ -10,8 +10,6 @@ class Program
         journal1.DisplayMessage();
         journal1.DisplayMenu();
         journal1.DisplayEndMessage();
-
-        
-        
+           
     }
 }
