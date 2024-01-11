@@ -4,12 +4,14 @@ public class Journal
     
     public void DisplayMessage()
     {
+        Console.ForegroundColor = ConsoleColor.Red;
         Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
         Console.WriteLine("Welcome to the Journal Program!");
         Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
     }
     public void DisplayMenu()
     {
+        Console.ForegroundColor = ConsoleColor.Yellow;
         List<string> choices = new List<string>();
         choices.Add("Write");
         choices.Add("Display");
@@ -22,6 +24,7 @@ public class Journal
     } 
     public void DisplayEndMessage()
     {
+        Console.ForegroundColor = ConsoleColor.Red;
         Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
         Console.WriteLine("Good-bye, write again tomorrow!");
         Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
