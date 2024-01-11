@@ -19,6 +19,13 @@ public class Journal
         //below expression inspired by https://stackoverflow.com/questions/62335522/printing-the-index-of-an-item-in-the-item to achieve number with Menu choice.
         choices.ForEach(item => Console.WriteLine($"{choices.IndexOf(item)}. {item}"));
 
-    }   
+    } 
+    public void DisplayEndMessage()
+    {
+        Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+        Console.WriteLine("Good-bye, write again tomorrow!");
+        Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+
+    }  
 }
 
