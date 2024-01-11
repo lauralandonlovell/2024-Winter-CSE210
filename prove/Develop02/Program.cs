@@ -9,7 +9,10 @@ class Program
         Journal journal1 = new Journal();
         journal1.DisplayMessage();
         journal1.DisplayMenu();
+        Console.Write("\nPlease enter the number of your choice: ");
+        Console.ReadLine();
         journal1.DisplayEndMessage();
+
            
     }
 }
