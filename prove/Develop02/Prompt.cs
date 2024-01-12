@@ -1,5 +1,9 @@
 public class Prompt
 {   
-    public List<string> prompts = new List<string>();
-    
+  public string _word;
+
+  public void Display()
+  {
+    Console.WriteLine("The test word is {_word}.");
+  } 
 }
