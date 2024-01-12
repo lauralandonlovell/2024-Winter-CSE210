@@ -6,40 +6,33 @@ class Program
 {
     static void Main(string[] args)
     {
-        Journal journal1 = new Journal();
-        journal1.DisplayMessage();
-        journal1.DisplayMenu();
-        Console.Write("\nPlease enter the number of your choice: ");
-        Console.ReadLine();
-        Prompt prompt1 = new Prompt();
-        prompt1._word = "Surprisingly...";
-
-        Prompt prompt2 = new Prompt();
-        prompt2._word = "Today...";
-
-        Prompt prompt3 = new Prompt();
-        prompt3._word = "Tomorrow...";
-
-        Prompt prompt4 = new Prompt();
-        prompt4._word = "Why...";
-
-        Prompt prompt5 = new Prompt();
-        prompt5._word = "When...";
-
-        Entry entry1 = new Entry();
-        entry1._promptList.Add(prompt1);
-        entry1._promptList.Add(prompt2);
-        entry1._promptList.Add(prompt3);
-        entry1._promptList.Add(prompt4);
-        entry1._promptList.Add(prompt5);
-
-        entry1.Display();
-
-        journal1.DisplayEndMessage();
-
         
+        Console.ForegroundColor = ConsoleColor.Yellow;
+        Console.WriteLine("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+        Console.WriteLine("Welcome to the Journal Program!");
+        Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+        
+        //Console.ForegroundColor = ConsoleColor.Yellow;
+        List<string> choices = new List<string>();
+        choices.Add("Write");
+        choices.Add("Display");
+        choices.Add("Load");
+        choices.Add("Save");
+        choices.Add("Quit");
+        //below expression inspired by https://stackoverflow.com/questions/62335522/printing-the-index-of-an-item-in-the-item to achieve number with Menu choice.
+        choices.ForEach(item => Console.WriteLine($"{choices.IndexOf(item)}. {item}"));
+        Console.WriteLine();
+        Console.WriteLine("\nPlease enter the number of your choice: ");
 
-
-           
+        Journal journal1 = new Journal();
+        // journal1.DisplayMessage();
+        // journal1.DisplayMenu();
+        
+        Console.ForegroundColor = ConsoleColor.Yellow;
+        Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+        Console.WriteLine("Good-bye, write again tomorrow!");
+        Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+        Console.Write("Press any key to exit: ");
+        Console.ReadKey();          
     }
 }

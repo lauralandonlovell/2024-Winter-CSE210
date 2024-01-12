@@ -1,9 +1,12 @@
-public class Prompt
-{   
-  public string _word;
+using System.Runtime.CompilerServices;
+using System.Security.Cryptography;
 
-  public void Display()
+public class Prompt
+{
+  List<string>_prompts = new List<string>();
+
+  public string GetRandomPrompt()
   {
-    Console.WriteLine("The test word is {_word}.");
-  } 
+    return "";
+  }   
 }
