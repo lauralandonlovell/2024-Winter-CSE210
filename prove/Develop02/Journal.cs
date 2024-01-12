@@ -16,13 +16,13 @@ public class Journal
     {
 
     }
-    public string SaveToFile(string file)
+    public void SaveToFile(string file)
     {
-        return "";
+
     }
-    public string LoadFromFile(string file)
+    public void LoadFromFile(string file)
     {
-        return "";
+    
     }
       
 }
