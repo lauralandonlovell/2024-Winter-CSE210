@@ -30,16 +30,17 @@ class Program
         Console.ReadKey();
         Console.WriteLine();
 
-        //Journal journal1 = new Journal();
+        Journal journal1 = new Journal();
+
 
         Prompts prompt1 = new Prompts();
 
         Entry entry1 = new Entry();
-        entry1._entryDate = DateTime.Now;
+        entry1._entryDate = "";
         entry1._promptText = prompt1.GetPrompt();
-        entry1._entryText = "test";
-
-        // journal1.AddEntry(entry1);
+        entry1._entryText = "";
+        entry1.Display();
+        journal1.AddEntry(entry1);
 
         Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
         Console.WriteLine("Good-bye, write again tomorrow!");

@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Globalization;
 public class Entry
 {
-  public DateTime _entryDate = DateTime.Now; 
+  public string _entryDate; 
   public string _promptText;
   public string _entryText;
   public void Display()
