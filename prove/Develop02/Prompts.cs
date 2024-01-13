@@ -11,10 +11,6 @@ public class Prompts
         _prompts.Add("What do you want to start doing tomorrow? ");
         _prompts.Add("Did you see any dogs today? ");
 
-        foreach (string prompt in _prompts)
-        {
-            Console.WriteLine(prompt);
-        }
         _prompts.ForEach((item) => Console.WriteLine($"{_prompts.IndexOf(item)}.{item}"));
         return "";
     }

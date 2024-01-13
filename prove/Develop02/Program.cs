@@ -33,12 +33,11 @@ class Program
         //Journal journal1 = new Journal();
 
         Prompts prompt1 = new Prompts();
-        prompt1.GetPrompt();
 
-        // Entry entry1 = new Entry();
-        // entry1._entryDate = DateTime.Now;
-        // entry1._promptText = prompt1.GetPrompt();
-        // entry1._entryText = "test";
+        Entry entry1 = new Entry();
+        //entry1._entryDate = DateTime.Now;
+        entry1._promptText = prompt1.GetPrompt();
+        entry1._entryText = "test";
 
         // journal1.AddEntry(entry1);
 
