@@ -4,18 +4,18 @@ public class Entry
 {
   public string _entryDate; 
   public string _promptText;
+  public string _randomPromptText;
   public string _entryText;
   public void Display()
   {
     
   }
-  public string GetDate()
-  {
-      DateTime entryStamp = new DateTime();
-      entryStamp = DateTime.Now;
-      string _entryDate = entryStamp.ToShortDateString();
-      return _entryDate; 
+  //public string GetDate()
+  // {
+  //     DateTime theCurrentTime = DateTime.Now;
+  //     string entryDate = theCurrentTime.ToShortDateString();
 
-  }   
+  //     return "";
+  // }   
 } 
 

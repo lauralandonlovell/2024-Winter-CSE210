@@ -16,7 +16,6 @@ class Program
         Console.WriteLine("Welcome to the Journal Program!");
         Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
         
-        //Console.ForegroundColor = ConsoleColor.Yellow;
         List<string> choices = new List<string>();
         choices.Add("Write");
         choices.Add("Display");
@@ -27,25 +26,46 @@ class Program
         choices.ForEach(item => Console.WriteLine($"{choices.IndexOf(item)}.{item}"));
         Console.WriteLine();
         Console.WriteLine("\nPlease enter the number of your choice: ");
-        Console.ReadKey();
-        Console.WriteLine();
-
-        Journal journal1 = new Journal();
-
+        string userChoice = Console.ReadLine();
 
         Prompts prompt1 = new Prompts();
 
         Entry entry1 = new Entry();
         entry1._entryDate = "";
         entry1._promptText = prompt1.GetPrompt();
-        entry1._entryText = "";
+        entry1._entryText = ">>>";
         entry1.Display();
-        journal1.AddEntry(entry1);
 
+        Journal journal1 = new Journal();
+        journal1._entries = new List<Entry>();
+        journal1.DisplayContents();
+        // if (userChoice == "0")
+        // {
+        //     entry1.Display();
+        //     journal1.AddEntry(entry1);
+        // } 
+        // else if (userChoice == "1")
+        // {
+        //     entry1.Display();
+        // }
+        // else if (userChoice == "2")
+        // {
+        //     journal1.DisplayContents();
+        // }
+        // else if (userChoice == "3")
+        // {
+        //     Console.WriteLine("Please specify a filepath: ");
+        //     string file = Console.ReadLine();
+        //     journal1.SaveToFile(file);
+        // }
+        // else if (userChoice =="4")
+        
         Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
         Console.WriteLine("Good-bye, write again tomorrow!");
         Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
         Console.Write("Press any key to exit: ");
-        Console.ReadKey();
+        Console.ReadKey();  
+    
+              
     }
 }
