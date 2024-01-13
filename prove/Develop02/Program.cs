@@ -35,7 +35,7 @@ class Program
         Prompts prompt1 = new Prompts();
 
         Entry entry1 = new Entry();
-        //entry1._entryDate = DateTime.Now;
+        entry1._entryDate = DateTime.Now;
         entry1._promptText = prompt1.GetPrompt();
         entry1._entryText = "test";
 
