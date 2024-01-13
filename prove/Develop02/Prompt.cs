@@ -1,12 +1,11 @@
-using System.Runtime.CompilerServices;
-using System.Security.Cryptography;
-
-public class Prompt
+using System.Collections.Generic;
+public class Prompts
 {
-  List<string>_prompts = new List<string>();
+    List<string> _prompts;
 
-  public string GetRandomPrompt()
-  {
-    return "";
-  }   
+    public string GetPrompt()
+    {
+        return "";
+    }
+
 }

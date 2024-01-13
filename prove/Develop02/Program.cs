@@ -25,10 +25,16 @@ class Program
         Console.WriteLine("\nPlease enter the number of your choice: ");
 
         Journal journal1 = new Journal();
+
         // journal1.DisplayMessage();
         // journal1.DisplayMenu();
-        
-        Console.ForegroundColor = ConsoleColor.Yellow;
+
+        Entry entry1 = new Entry();
+        DateTime dateText = DateTime.Now;
+        string _entryDate = dateText.ToShortDateString();;
+        entry1._promptText = "";
+        entry1._entryText = "";
+    
         Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
         Console.WriteLine("Good-bye, write again tomorrow!");
         Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
