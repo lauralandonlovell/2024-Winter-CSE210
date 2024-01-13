@@ -1,6 +1,10 @@
 using System;
 using System.Collections.Generic;
+using System.Data.Common;
+using System.Diagnostics;
+using System.Dynamic;
 using System.IO;
+using System.Security.Cryptography.X509Certificates;
 
 class Program
 {
@@ -20,25 +24,28 @@ class Program
         choices.Add("Save");
         choices.Add("Quit");
         //below expression inspired by https://stackoverflow.com/questions/62335522/printing-the-index-of-an-item-in-the-item to achieve number with Menu choice.
-        choices.ForEach(item => Console.WriteLine($"{choices.IndexOf(item)}. {item}"));
+        choices.ForEach(item => Console.WriteLine($"{choices.IndexOf(item)}.{item}"));
         Console.WriteLine();
         Console.WriteLine("\nPlease enter the number of your choice: ");
+        Console.ReadKey();
+        Console.WriteLine();
 
-        Journal journal1 = new Journal();
+        //Journal journal1 = new Journal();
 
-        // journal1.DisplayMessage();
-        // journal1.DisplayMenu();
+        Prompts prompt1 = new Prompts();
+        prompt1.GetPrompt();
 
-        Entry entry1 = new Entry();
-        DateTime dateText = DateTime.Now;
-        string _entryDate = dateText.ToShortDateString();;
-        entry1._promptText = "";
-        entry1._entryText = "";
-    
+        // Entry entry1 = new Entry();
+        // entry1._entryDate = DateTime.Now;
+        // entry1._promptText = prompt1.GetPrompt();
+        // entry1._entryText = "test";
+
+        // journal1.AddEntry(entry1);
+
         Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
         Console.WriteLine("Good-bye, write again tomorrow!");
         Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
         Console.Write("Press any key to exit: ");
-        Console.ReadKey();          
+        Console.ReadKey();
     }
 }
