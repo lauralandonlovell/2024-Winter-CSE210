@@ -18,7 +18,7 @@ public class Resume
    {
       foreach (Job job in _jobs)
       {
-         Console.WriteLine(job.Count)
+         Console.WriteLine(job);
       }
    }
 }

@@ -19,6 +19,9 @@ class Program
         fractionoid1.SetBase(5);
         Console.WriteLine(fractionoid1.GetBase());
 
+        fraction1.GetFractionString();
+        fraction1.GetDecimalValue();
+
 
 
 

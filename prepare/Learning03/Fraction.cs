@@ -1,4 +1,6 @@
+using System.Diagnostics;
 using System.Runtime.CompilerServices;
+using System.Security.Cryptography.X509Certificates;
 
 public class Fraction
 { 
@@ -28,7 +30,8 @@ public class Fraction
 
         Console.WriteLine($"{_hautNum}/{_basNum}");
     }
-    //methods
+
+    //getter/setters
     public int GetTop()
     {
         return _hautNum;
@@ -45,5 +48,17 @@ public class Fraction
     {
         _basNum = bas;
     }
+    //methods
+    public string GetFractionString()
+    {
+        string top = _hautNum.ToString();
+        string bas = _basNum.ToString();
+        return top+"/"+bas;
+    }
+    public double GetDecimalValue()
+    {
+        return _hautNum / _basNum;
+    }
 
+    
 }
